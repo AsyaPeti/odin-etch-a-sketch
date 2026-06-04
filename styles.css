@@ -5,3 +5,9 @@ html {
 *, *::before, *::after {
   box-sizing: inherit;
 }
+
+.square {
+  height: 60px;
+  width: 60px;
+  border: 1px solid black;
+}
