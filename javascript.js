@@ -22,9 +22,16 @@ const btn = document.querySelector("button");
 
 // An event listener that renews the grid with a custom number of squares
 btn.addEventListener("click", () => {
-  grid.replaceChildren();
   let n = prompt("Enter a number of squares per side (no more than 100).", "");
-  gridConstructor(n);
+  
+  // A conditional to check the entered number
+  if ((Number.isNaN(+n)) || (n === null) ||
+      (n === "") || (n > 100) || (n < 1)) {
+    alert("Error!")
+  } else if (n < 100) {
+    grid.replaceChildren();
+    gridConstructor(n);
+  }
 });
 
 // The initial creation of a grid
