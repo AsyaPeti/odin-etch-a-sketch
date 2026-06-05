@@ -1,21 +1,5 @@
-/* html {
-  box-sizing: border-box;
-} */
-
-/* *, *::before, *::after {
-  box-sizing: inherit;
-} */
-
-.square {
-  height: 60px;
-  width: 60px;
-  border: 0.5px solid black;
-  flex: none;
-  box-sizing: border-box;
-}
-
-.square.color {
-  background-color: black;
+button {
+  margin: 1em;
 }
 
 #grid {
@@ -24,6 +8,16 @@
   flex-wrap: wrap;
   width: 960px;
   height: 960px;
-  border: 0.5px solid black;
-  /* box-sizing: content-box; */
+  border: 0.1px solid black;
+  margin: auto;
+}
+
+.square {
+  border: 0.1px solid black;
+  flex: none;
+  box-sizing: border-box;
+}
+
+.square.color {
+  background-color: black;
 }
