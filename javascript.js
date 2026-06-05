@@ -5,3 +5,8 @@ for (i = 1; i <= 16 * 16; i++) {
   square.classList.toggle("square");
   grid.appendChild(square);
 }
+
+grid.addEventListener("mouseover", (event) => {
+  let color = event.target;
+  color.classList.add("color");
+});
