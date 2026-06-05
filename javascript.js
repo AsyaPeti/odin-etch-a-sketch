@@ -3,8 +3,8 @@ function gridConstructor(n) {
   // A loop that adds squares to the grid
   for (i = 1; i <= n * n; i++) {
     let square = document.createElement("div");
-    square.style.width = `${960 / n}px`;
-    square.style.height = `${960 / n}px`;
+    square.style.width = `${100 / n}%`;
+    square.style.height = `${100 / n}%`;
     square.classList.toggle("square");
     grid.appendChild(square);
 }
