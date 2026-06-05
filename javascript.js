@@ -14,7 +14,6 @@ function gridConstructor(n) {
     // A conditional that filters only child elements
     if (event.target.matches(".square")) {
       let color = event.target;
-      // let opacity = color.style.opacity;
       let red = Math.floor(Math.random() * 256);
       let green = Math.floor(Math.random() * 256);
       let blue = Math.floor(Math.random() * 256);
