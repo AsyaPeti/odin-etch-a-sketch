@@ -43,7 +43,7 @@ btn.addEventListener("click", () => {
   if ((Number.isNaN(+n)) || (n === null) ||
       (n === "") || (n > 100) || (n < 1)) {
     alert("Error!")
-  } else if (n <= 100) {
+  } else {
     grid.replaceChildren();
     gridConstructor(n);
   }
