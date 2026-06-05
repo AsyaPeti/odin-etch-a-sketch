@@ -17,7 +17,3 @@ button {
   flex: none;
   box-sizing: border-box;
 }
-
-.square.color {
-  background-color: black;
-}

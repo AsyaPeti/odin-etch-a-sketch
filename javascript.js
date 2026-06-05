@@ -11,8 +11,14 @@ function gridConstructor(n) {
 
   // An event listener that enables drawing on the grid
   grid.addEventListener("mouseover", (event) => {
-    let color = event.target;
-    color.classList.add("color");
+    // A conditional that filters only child elements
+    if (event.target.matches(".square")) {
+      let color = event.target;
+      let red = Math.floor(Math.random() * 256);
+      let green = Math.floor(Math.random() * 256);
+      let blue = Math.floor(Math.random() * 256);
+      color.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`;
+    }
   });
 }
 
